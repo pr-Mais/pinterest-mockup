@@ -1,3 +1,3 @@
-# pinterest
+# Pinterest 
 
-A mockup of Pinterest made using Flutter.
+A mockup of Pinterest UI made using Flutter, for both Android and iOS.
