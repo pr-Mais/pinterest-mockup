@@ -1,3 +1,3 @@
 # pinterest
 
-A mockup of Pinterest
+A mockup of Pinterest made using Flutter.
