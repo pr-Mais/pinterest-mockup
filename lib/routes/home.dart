@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   List<Widget> _widgetOptions;
   FocusNode _focusNode = new FocusNode();
   TabController _tabController;
-  ScrollController _hideButtonController=new ScrollController();
+  ScrollController _hideButtonController = new ScrollController();
   AnimationController _animationController;
   Animation _animation;
   var _isVisible = true;
@@ -269,7 +269,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               splashColor: Colors.transparent,
                               onTap: () {
                                 _imageModalBottomSheet(
-                                _scaffoldKey.currentContext);
+                                    _scaffoldKey.currentContext);
                               },
                               child: IconTheme(
                                   data: IconThemeData(size: 18),
@@ -417,7 +417,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                       ),
                       onTap: () {
-                        _focusNode.unfocus();
+                        setState(() {
+                          _focusNode.unfocus();
+                        });
                       },
                     )),
                     secondChild: Container(),
@@ -459,6 +461,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     searchKey = input;
                     print(searchKey);
                   });
+                },
+                onTap: () {
+                  setState(() {});
                 },
                 placeholderStyle: TextStyle(
                     fontWeight: FontWeight.bold,
